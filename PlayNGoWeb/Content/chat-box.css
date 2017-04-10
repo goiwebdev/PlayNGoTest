@@ -1,0 +1,220 @@
+﻿
+@import url(http://www.justinaguilar.com/animations/css/animations.css);
+
+
+/*-----------------------------------------------------*/
+.chatbox {
+    position: fixed;
+	position:expression("absolute");
+	width: 240px;
+	display:none;
+	z-index:99;
+}
+
+.chatboxhead {
+	background-color: #777777;
+	padding:7px;
+	color: #ffffff;
+	border-radius:4px 4px 0 0;
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;
+	font-family: "Oswald",sans-serif;
+}
+.chatboxhead .chatboxoptions{
+}
+.chatboxhead .chatboxoptions a{
+	vertical-align:middle;
+	display:inline-block;
+	color:#fff;
+	margin:0 3px;
+	height:14px;
+	width:14px;
+	text-align:center;
+}
+.chatboxhead .chatboxoptions a:hover{
+	color:rgba(0,0,0,0.5);
+}
+.chatboxhead .chatboxoptions a i{
+	vertical-align:top;
+}
+
+#displayname {
+    color:#eeeeee;
+}
+
+.chatboxblink {
+	background-color: #176689;
+	border-right:1px solid #176689;
+	border-left:1px solid #176689;
+}
+
+.chatboxcontent {
+	font-family: "PT Sans",sans-serif;
+	font-size: 12px;
+	color: #333333;
+	height:200px;
+	width:240px;
+	overflow-y:auto;
+	overflow-x:auto;
+	padding:7px;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #eeeeee;
+	background-color: #e5e5e5;
+	line-height: 1.3em;
+	background-color:#dddddd;
+}
+
+.chatboxinput {
+	padding: 5px;
+	background-color: #ffffff;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+}
+
+.chatboxtextarea {
+	width: 226px;
+	height:44px;
+	padding:3px 0pt 3px 3px;
+	border: 1px solid #eeeeee;
+	margin: 1px;
+	overflow:hidden;
+	resize:none;
+}
+
+.chatboxtextareaselected {
+	border: 2px solid #f99d39;
+	margin:0;
+}
+
+.chatboxmessage {
+	/*margin-left:1em;*/
+}
+.chatboxmessage time{
+	color:#69F;
+	font-size:10px;
+	clear:both;
+	display:block;
+	position:absolute;
+	right:4px;
+	top:0;
+}
+
+.chatboxinfo {
+	margin-left:-1em;
+	color:#666666;
+
+}
+
+.chatboxmessagefrom {
+	margin-left:0em;
+	font-weight: bold;
+	float:left;
+	width:46px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+.chatboxmessagecontent {
+	background-color:#fff;
+	padding:14px 8px 4px;
+	position:relative;
+	margin-left:55px;
+	margin-bottom:5px;
+}
+.chatboxmessagecontent:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border: 5px solid #FFF;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+	z-index:2;
+	color:#333;
+}
+
+.chatboxoptions {
+	float: right;
+}
+
+.chatboxoptions a {
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+
+}
+
+.chatboxtitle {
+	float: left;
+}
+.chatbox .all{
+	clear:both;
+	overflow:hidden;
+	height:0;
+}
+.chatboxmessage:before,
+.chatboxmessage:after,{
+  display: table;
+  content: " ";
+}
+.chatboxmessage:after{
+  clear: both;
+}
+.chatboxoptions .dropdown{
+	display:inline-block;
+}
+.chatboxoptions .dropdown .dropdown-menu{
+	min-width: 120px;
+}
+.chatboxoptions .dropdown .dropdown-menu li a{
+	display:block;
+	color:#333;
+	font-family: "PT Sans",sans-serif;
+	font-size:13px;
+	height:auto;
+	width:100%;
+	text-align:left;
+	padding-left:5px;
+	padding-right:5px;
+}
+.chatboxoptions .dropdown .dropdown-menu li a i{
+	vertical-align:middle;
+}
+
+.chatboxoptions .dropdown .dropdown-menu li a:hover{
+	color:#fff;
+}
+.chatboxmessage.ltr{
+}
+.chatboxmessage.ltr .chatboxmessagefrom{
+	float:right;
+	text-align:right;
+}
+.chatboxmessage.ltr .chatboxmessagecontent {
+  margin-left: 0;
+  margin-right:55px;
+  padding: 14px 8px 4px;
+}
+.chatboxmessage.ltr time {
+  left: 4px;
+  right:auto;
+}
+
+.chatboxmessage.ltr .chatboxmessagecontent:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: -10px;
+	left:auto;
+    width: 0;
+    height: 0;
+    border: 5px solid #FFF;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+	z-index:2;
+	color:#333;
+}

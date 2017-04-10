@@ -12,6 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PlayNGo", "src\PlayNGo\PlayNGo.xproj", "{CE9EEB18-A7CB-42DC-A020-F851E9FF355B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{4FBCAD3C-BE05-4B0C-A091-A27665B70616}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B652A1E7-232B-4730-AD12-0DF78F3D5BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayNGoWeb", "PlayNGoWeb\PlayNGoWeb.csproj", "{84413E11-8EFB-47A9-A52A-C693EA0F4615}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +28,20 @@ Global
 		{CE9EEB18-A7CB-42DC-A020-F851E9FF355B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE9EEB18-A7CB-42DC-A020-F851E9FF355B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE9EEB18-A7CB-42DC-A020-F851E9FF355B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBCAD3C-BE05-4B0C-A091-A27665B70616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBCAD3C-BE05-4B0C-A091-A27665B70616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBCAD3C-BE05-4B0C-A091-A27665B70616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBCAD3C-BE05-4B0C-A091-A27665B70616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84413E11-8EFB-47A9-A52A-C693EA0F4615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84413E11-8EFB-47A9-A52A-C693EA0F4615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84413E11-8EFB-47A9-A52A-C693EA0F4615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84413E11-8EFB-47A9-A52A-C693EA0F4615}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CE9EEB18-A7CB-42DC-A020-F851E9FF355B} = {098195FD-B0D5-4964-845A-8D4A2332B300}
+		{84413E11-8EFB-47A9-A52A-C693EA0F4615} = {B652A1E7-232B-4730-AD12-0DF78F3D5BD5}
 	EndGlobalSection
 EndGlobal
