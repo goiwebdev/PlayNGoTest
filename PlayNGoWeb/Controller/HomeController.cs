@@ -21,5 +21,11 @@ namespace PlayNGoWeb.Controllers
 
             return View(employeeList);
         }
+
+        public ActionResult ChatBox()
+        {
+            return PartialView("~Views/Home/ChatBox");
+
+        }
     }
 }

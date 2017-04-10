@@ -17,11 +17,8 @@ textarea {
 }
 
 
-/*a.playngohome {
-    background: url(../Content/images/playngo.png) no-repeat top left;
-     display: block;
-     width: 650px;
-     height: 90px;
-     text-indent: -9999px; /* hides the link text */
-
-}*/
+.py-5.bg-inverse {
+    bottom: 0;
+    left: 10px;
+    position: fixed;
+}
