@@ -16,6 +16,8 @@
     // Get the user name and store it to prepend to messages.
     $('#displayname').text(prompt('Enter your name:', ''));
 
+    $('#thread').append('<p><strong> Hi! ' + $('#displayname').text()
+    + '</strong></p>');
 
     // Set initial focus to message input box.
     $('#message').focus();

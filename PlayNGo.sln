@@ -3,20 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{098195FD-B0D5-4964-845A-8D4A2332B300}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{021C45E1-6C1D-4A5D-AC75-4E81FF599896}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PlayNGo", "src\PlayNGo\PlayNGo.xproj", "{CE9EEB18-A7CB-42DC-A020-F851E9FF355B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{4FBCAD3C-BE05-4B0C-A091-A27665B70616}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B652A1E7-232B-4730-AD12-0DF78F3D5BD5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayNGoWeb", "PlayNGoWeb\PlayNGoWeb.csproj", "{84413E11-8EFB-47A9-A52A-C693EA0F4615}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Data", "1.Data", "{8CD30C79-6C39-44C5-8733-6532B6F7A3DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayNGo.Core", "PlayNGo.Core\PlayNGo.Core.csproj", "{C09B0563-0463-48AC-97DB-C2143DB307F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Business", "2. Business", "{0B37C5F5-1786-4C5D-90BF-A21C1F12A47A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayNGo.Business", "PlayNGo.Business\PlayNGo.Business.csproj", "{83DBCE7B-6127-4AA7-B070-A70E67AFC302}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,24 +21,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CE9EEB18-A7CB-42DC-A020-F851E9FF355B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE9EEB18-A7CB-42DC-A020-F851E9FF355B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE9EEB18-A7CB-42DC-A020-F851E9FF355B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE9EEB18-A7CB-42DC-A020-F851E9FF355B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4FBCAD3C-BE05-4B0C-A091-A27665B70616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FBCAD3C-BE05-4B0C-A091-A27665B70616}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FBCAD3C-BE05-4B0C-A091-A27665B70616}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FBCAD3C-BE05-4B0C-A091-A27665B70616}.Release|Any CPU.Build.0 = Release|Any CPU
 		{84413E11-8EFB-47A9-A52A-C693EA0F4615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{84413E11-8EFB-47A9-A52A-C693EA0F4615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84413E11-8EFB-47A9-A52A-C693EA0F4615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84413E11-8EFB-47A9-A52A-C693EA0F4615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09B0563-0463-48AC-97DB-C2143DB307F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09B0563-0463-48AC-97DB-C2143DB307F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09B0563-0463-48AC-97DB-C2143DB307F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09B0563-0463-48AC-97DB-C2143DB307F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DBCE7B-6127-4AA7-B070-A70E67AFC302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DBCE7B-6127-4AA7-B070-A70E67AFC302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DBCE7B-6127-4AA7-B070-A70E67AFC302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DBCE7B-6127-4AA7-B070-A70E67AFC302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{CE9EEB18-A7CB-42DC-A020-F851E9FF355B} = {098195FD-B0D5-4964-845A-8D4A2332B300}
 		{84413E11-8EFB-47A9-A52A-C693EA0F4615} = {B652A1E7-232B-4730-AD12-0DF78F3D5BD5}
+		{C09B0563-0463-48AC-97DB-C2143DB307F8} = {8CD30C79-6C39-44C5-8733-6532B6F7A3DB}
+		{83DBCE7B-6127-4AA7-B070-A70E67AFC302} = {0B37C5F5-1786-4C5D-90BF-A21C1F12A47A}
 	EndGlobalSection
 EndGlobal

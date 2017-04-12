@@ -5,12 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core
+namespace PlayNGo.Core.Context
 {
-    public class EmployeeContext : DbContext
+    public class PlayNGoContext : DbContext
     {
-        public DbSet<Employee> Employees { get; set; }
-
-
     }
 }
