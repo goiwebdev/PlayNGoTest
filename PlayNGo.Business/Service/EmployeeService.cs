@@ -23,5 +23,27 @@ namespace PlayNGo.Business.Service
             return _employeeRepository.GetAll().OrderBy(m => m.LastName).ToList();
         }
 
+        public Employee GetEmployeeById(int id)
+        {
+            return _employeeRepository.SearchFor(a => a.Id == id).FirstOrDefault();
+        }
+
+        public void UpdateEmployee(Employee employee)
+        {
+            var emp = _employeeRepository.SearchFor(a => a.Id == employee.Id).FirstOrDefault();
+            _employeeRepository.Update(employee, s => s.Id == employee.Id);
+        }
+
+        public void DeleteEmployee(int id)
+        {
+            _employeeRepository.Delete(a => a.Id == id);
+        }
+
+        public Employee AddEmployee(Employee employee)
+        {
+            var newEmployee = _employeeRepository.Insert(employee);
+            return newEmployee;
+        }
+
     }
 }

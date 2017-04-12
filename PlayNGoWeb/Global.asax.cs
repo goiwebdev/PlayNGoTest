@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlayNGoWeb.Dependency;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,7 +18,8 @@ namespace PlayNGoWeb
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
- 
+            var di = new DI();
+            di.Configure();
         }
     }
 }
